@@ -1,13 +1,24 @@
 package com.example.alumno.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.envers.Audited;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "alumno")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Audited
 public class Alumno implements Serializable {
 
     @Column(name = "nombre")
