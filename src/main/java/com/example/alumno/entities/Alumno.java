@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Audited
-public class Alumno implements Serializable {
+public class Alumno extends Base implements Serializable {
 
     @Column(name = "nombre")
     String nombre;
