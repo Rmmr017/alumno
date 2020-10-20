@@ -1,6 +1,6 @@
 package com.example.alumno.services;
 
-import com.example.alumno.entities.Alumno;
+import com.example.alumno.entities.Alumni;
 
-public class AlumnoService implements BaseService<Alumno, Long> {
+public interface AlumnoService extends BaseService <Alumni, Long>{
 }

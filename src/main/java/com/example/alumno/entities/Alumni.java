@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Getter
 @Setter
 @Audited
-public class Alumno extends Base {
+public class Alumni extends Base {
     @Column(name = "nombre")
     private String nombre;
     @Column (name = "apellido")
